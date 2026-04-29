@@ -1,0 +1,145 @@
+.container-cards{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+section .container-cards{
+position: relative; /* Eje de referencia para los elementos internos */
+    height: 380px;
+    width: 200px;
+    border-radius: 50px;
+    overflow: hidden; /* Importante para que la imagen no se salga de las esquinas */
+    
+    /* Degradado superpuesto (opcional para legibilidad) */
+    background: linear-gradient(to top, rgba(172, 245, 246, 0.8) 0%, transparent 100%);
+    
+    /* Flexbox para organizar el contenido encima del fondo */
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    gap: 5px;
+    padding: 15px;
+    border: 2px solid #84848474;
+
+}
+
+
+
+.container-like, .container-text, .container-button {
+    position: relative;
+    z-index: 1;
+}
+.background-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    /* Esto hace que la imagen cubra todo el espacio sin deformarse */
+    object-fit: cover; 
+    
+    /* La mandamos al fondo de todas las capas */
+    z-index: -1; 
+    opacity: 0;
+      animation: fondo-sal .5s ease-in forwards;
+}
+
+.container-cards:hover .background-img {
+  animation: fondo 1s ease-in forwards;
+    
+
+}
+.container-cards:hover{
+      box-shadow: 
+  0 0 12px #aee7bd,
+  0 0 15px #33ffff74,
+  0 0 10px #add9f774;
+  border: none;
+}
+
+
+.container-like{
+    display: flex;
+    justify-content:end;
+
+}
+
+.container-text{
+    margin: 0;
+}
+
+@keyframes fondo {
+from {opacity: 0;}
+to{opacity: .6;}
+}
+
+
+@keyframes fondo-sal {
+from {
+    opacity: 1;
+
+}
+to{opacity: 0;}
+}
+
+.fondo-img {
+    position: relative;
+    height: 150px;
+    width: 100%;       /* Ocupa el 100% del contenedor padre */
+    display: flex;     /* Centra la imagen automáticamente */
+    justify-content: center; 
+    align-items: center;
+    overflow: hidden; 
+    
+}
+
+
+.circulo-az{
+    position: absolute;
+    background-color: rgba(65, 155, 171, 0.637);
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    z-index: 1;
+    left: 60%;
+    transform: translateX(-100%);
+top: 5px;
+ animation: ap-img .5s ease-in forwards;
+}
+
+.circulo-ver{
+    position: absolute;
+    background-color:  rgba(17, 118, 136, 0.637);;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    z-index: 2;
+    left: 40%;
+    top: 20px;
+ animation: ap-img .5s ease-in forwards;
+    
+}
+
+/* Aplicamos el hover para que funcione cuando el cursor entre a cualquiera de los dos */
+.fondo-img:hover .circulo-az, .container-cards:hover .circulo-az,
+.fondo-img:hover .circulo-ver, .container-cards:hover .circulo-ver {
+    animation: dis-img .5s ease-in forwards;
+}
+
+@keyframes dis-img {
+    from{opacity: 1;
+        visibility: visible;
+
+    }to{opacity: 0;
+    visibility: hidden;}
+}
+
+@keyframes ap-img {
+    from{opacity: 0;
+        visibility: hidden;
+
+    }to{opacity: 1;
+    visibility: visible;}
+}

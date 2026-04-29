@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=GFS+Didot&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    margin: 0;
+}
+.cont-title{
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    
+}
+.cont-title h1{
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    letter-spacing: .5px;
+  
+
+}
+.cont-inf p{
+    font-size: 12px;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: .2px;
+    color: #000;
+}
+

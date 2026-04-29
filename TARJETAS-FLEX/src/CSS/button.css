@@ -1,0 +1,16 @@
+.con-button{
+  display: flex;
+   justify-content: flex-end;
+ 
+}
+
+.con-button img{
+    height: 35px;
+    width: 35px;
+    display: flex;
+   
+  transform: translateX(-60px);
+   transform: translateY(12px);
+   cursor: pointer;
+}
+

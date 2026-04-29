@@ -1,0 +1,34 @@
+
+
+
+
+.prod-img{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    max-height: 110px;
+    left: 10px;
+    flex-wrap: wrap;
+    opacity: 1;
+    object-fit: contain;
+  transform: translateY(-15px);
+    
+}
+
+
+@keyframes dis-img {
+    from{opacity: 1;
+        visibility: visible;
+
+    }to{opacity: 0;
+    visibility: hidden;}
+}
+
+@keyframes ap-img {
+    from{opacity: 0;
+        visibility: hidden;
+
+    }to{opacity: 1;
+    visibility: visible;}
+}
+
