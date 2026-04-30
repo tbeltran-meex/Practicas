@@ -1,12 +1,14 @@
-import crema from '../../public/crema_ojo.png'
-import '../CSS/image.css'
 
-const Imagen = () => {
+import '../CSS/image.css'
+interface TextProps{
+  imagen:string;
+}
+const Imagen = ({imagen}:TextProps) => {
 
   return (
    
      
-      <img src={crema} alt="" className='prod-img' />
+      <img src={imagen} alt="" className='prod-img' />
 
   )
 }

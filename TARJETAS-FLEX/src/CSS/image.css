@@ -10,7 +10,7 @@
     left: 10px;
     flex-wrap: wrap;
     opacity: 1;
-    object-fit: contain;
+    object-fit: cover;
   transform: translateY(-15px);
     
 }

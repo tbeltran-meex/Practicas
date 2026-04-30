@@ -1,7 +1,10 @@
 .contain-desing{
     display: flex;
-    padding:  20px 300px 80px;
-  display: flex;
-  gap: 20PX;
+margin: 50px;
+    padding:  0;
+  gap: 20px;
+     flex-wrap: wrap;
+     
     
 }
+

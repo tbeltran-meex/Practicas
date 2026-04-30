@@ -1,7 +1,7 @@
 const Header= () => {
 
   return (
-    <p>ENCABEZADO</p>
+    <p></p>
   )
 }
 

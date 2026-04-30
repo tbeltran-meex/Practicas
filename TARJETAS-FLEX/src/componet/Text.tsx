@@ -1,13 +1,17 @@
 import '../CSS/Text.css'
-const Text = () => {
+interface TextProps{
+  titulo:string;
+  descripcion:string;
+}
+const Text = ({titulo,descripcion}:TextProps) => {
 
   return (
   <section>
     <div className="cont-title">
-      <h1>CREMA CONTORNO DE OJOS</h1>
+      <h1>{titulo}</h1>
     </div>
     <div className="cont-inf">
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+      <p>{descripcion}</p>
     </div>
   </section>
   )
