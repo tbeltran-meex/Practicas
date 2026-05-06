@@ -1,13 +1,11 @@
-main{ 
-    
-    display: flex;
-    flex-wrap: wrap;
-   
+/* EL CONTENEDOR PRINCIPAL (FONDO) */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(235, 231, 242); /* El gris que quieres */
+    min-height: 100vh;
     width: 100%;
-    height: 100%;
-
-    position: absolute;
-    z-index: -3;
-    background-color: rgb(235, 231, 242);
-  
+    /* Quitamos el overflow hidden si lo tenías */
+    overflow-y: auto; 
+    z-index: -5;
 }

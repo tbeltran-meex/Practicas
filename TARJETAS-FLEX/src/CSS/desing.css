@@ -1,10 +1,11 @@
-.contain-desing{
+/* CSS/desing.css */
+.contain-desing {
     display: flex;
-margin: 50px;
-    padding:  0;
-  gap: 20px;
-     flex-wrap: wrap;
-     
-    
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 50px;
+    /* No pongas position absolute ni fixed aquí */
+    position: relative; 
+    z-index: 1; /* Esto asegura que estén por encima del fondo */
+    justify-content: center; /* Opcional: para centrar las cartas */
 }
-

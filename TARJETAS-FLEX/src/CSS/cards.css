@@ -11,7 +11,7 @@ position: relative;
     border-radius: 50px;
     overflow: hidden; 
 
-    background: linear-gradient(to top, rgba(172, 245, 246, 0.8) 0%, transparent 100%);
+    background: linear-gradient(to top, #acf5f6cc 0%, transparent 100%);
     
   
     display: flex;
